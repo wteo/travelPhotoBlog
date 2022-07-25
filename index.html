@@ -6,47 +6,79 @@
         <!-- Access to BootStrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
-  </body>
-  </head>
         <title>My Travel Pictures</title>
-        <!-- VANILLA CSS
-         <link rel="stylesheet" href="styles.css">
-        -->
+        <style>
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
-    <body>
-        <header>
-            <h4 class="contact">Contact</h4>
-            <h4 class="about">About</h4>
-            <h4 class="photos">Photos</h4>
+    <body class="container">
+        <header class="row" style="padding: 1rem">
+            <nav class="nav justify-content-end">
+                <h4 class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Photos</a>
+                </h4>
+                <h4 class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">About</a>
+                </h4>
+            </nav>
         </header>
-        <div class="mainContainer"> 
-            <h1>Sri Lanka</h1>
-            <div class="photoGrid">
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha2.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha3.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha4.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha5.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha6.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha7.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha8.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha9.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha10.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha12.jpg" alt="borobudur"></div>
-                <div class="photoContainer"><img class="yogha" src="./images/yogha/yogha13.jpg" alt="borobudur"></div>
+        <main class="row container"> 
+            <h1 class="row" style="padding-bottom: 2rem">Yoghakarta, Indonesia</h1>
+            <div class="row">
+                <div class="card">
+                    <div id="travelPhotos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#travelPhotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#travelPhotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#travelPhotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#travelPhotos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#travelPhotos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#travelPhotos" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="card-img d-block w-100" src="./images/yogha/yogha.jpg" alt="borobudur">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="card-img d-block w-100" src="./images/yogha/yogha2.jpg" alt="borobudur">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="card-img d-block w-100" src="./images/yogha/yogha3.jpg" alt="borobudur">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="card-img d-block w-100" src="./images/yogha/yogha4.jpg" alt="borobudur">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="card-img d-block w-100" src="./images/yogha/yogha5.jpg" alt="borobudur">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="card-img d-block w-100" src="./images/yogha/yogha6.jpg" alt="borobudur">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#travelPhotos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#travelPhotos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Borobudur Temple</h3>
+                        <p class="card-text">The largest buddhist temple in the Southern hemisphere.</p>
+                    </div>
+                </div>
             </div>
+        </main>
+        <div class="row container" style="margin-top: 2rem">
+            <p class="row text-center fs-4">"The same sun which gilds all nature, and exhilarates the whole creation, does not shine upon disappointed ambition."</p>
+            <p class="row justify-content-end" style="padding-right: 15%">~ Edmund Burke</p>
         </div>
-        <div id="about">
-        </div>
-        <div id="contact">
-            <p>Let's Talk</p>
-            <form>
-                <label>Subject</label>
-                <input />
-                <label>Comment:</label>
-                <input />
-                <button>Contact</button>
-            </form>
-        </div>
+        <footer class="row">
+            <p style="padding-top: 4rem; float: center">© Wendy Teo 2022</p>
+        </footer>
     </body>
 </html>
